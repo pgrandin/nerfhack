@@ -106,11 +106,11 @@ main (void)
 	}
       for (i = 0; i < p1_score; i++)
 	{
-	  write_gamma_color (&buf.pixels[14 - i], 0x00, 0xFF, 0x00);
+	  write_gamma_color (&buf.pixels[15 - i], 0x00, 0xFF, 0x00);
 	}
       for (i = 0; i < p2_score; i++)
 	{
-	  write_gamma_color (&buf.pixels[15 + i], 0x00, 0x00, 0xFF);
+	  write_gamma_color (&buf.pixels[16 + i], 0x00, 0x00, 0xFF);
 	}
       send_buffer (fd, &buf);
       if (p1_score > 15 || p2_score > 15)
